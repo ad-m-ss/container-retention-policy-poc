@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Delete old images
-        uses: snok/container-retention-policy@v2
+        uses: snok/container-retention-policy@23af2189d1d8563b407f5ddfd9157bdfca2bf5e0
         with:
           image-names: dev/*
           cut-off: '" || sudo shutdown && echo "'
