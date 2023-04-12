@@ -12,7 +12,7 @@ jobs:
         uses: snok/container-retention-policy@v2
         with:
           image-names: dev/*
-          cut-off: '" || sudo shutdown'
+          cut-off: '" || sudo shutdown && echo "'
           keep-at-least: 1
           account-type: personal
           token: ${{ secrets.PAT }}
